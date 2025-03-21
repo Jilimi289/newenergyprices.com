@@ -4,139 +4,180 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>North American New Energy Vehicle Prices</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            apple: {
+              blue: '#007AFF',
+              green: '#34C759',
+              indigo: '#5856D6',
+              gray: '#8E8E93',
+              lightgray: '#F2F2F7',
+            }
+          }
+        }
+      }
+    }
+  </script>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      background-color: #f4f4f4;
-      color: #333;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: white;
+      color: #1a202c;
     }
-    h1 {
-      text-align: center;
-      color: #00796b;
+    
+    .table-container {
+      overflow-x: auto;
+      margin-bottom: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
     }
+    
     table {
-      width: 80%;
-      margin: 20px auto;
+      width: 100%;
       border-collapse: collapse;
-      background-color: #fff;
+      background-color: white;
     }
-    th, td {
-      padding: 12px 15px;
-      border: 1px solid #ddd;
-      text-align: center;
-    }
+    
     th {
-      background-color: #00796b;
-      color: #fff;
-    }
-    tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-    caption {
-      caption-side: top;
-      font-size: 1.2em;
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
-    p.note {
+      background-color: #007AFF;
+      color: white;
+      font-weight: 600;
+      padding: 0.75rem 1rem;
       text-align: center;
-      font-size: 0.9em;
-      color: #666;
+    }
+    
+    td {
+      padding: 0.75rem 1rem;
+      border: 1px solid #F2F2F7;
+      text-align: center;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #F2F2F7;
+    }
+    
+    .table-caption {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: #007AFF;
+      border-bottom: 1px solid #007AFF;
+      padding-bottom: 0.5rem;
+    }
+    
+    .note {
+      text-align: center;
+      font-size: 0.875rem;
+      color: #8E8E93;
+      margin-top: 1rem;
     }
   </style>
 </head>
 <body>
-  <h1>North American New Energy Vehicle Prices</h1>
+  <h1 class="text-3xl font-bold text-center text-apple-blue mb-6">North American New Energy Vehicle Prices</h1>
   
-  <table>
-    <caption>Electric Vehicles</caption>
-    <thead>
-      <tr>
-        <th>Model</th>
-        <th>Starting Price (USD)</th>
-        <th>Range (miles)</th>
-        <th>Notes</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>2025 Nissan Leaf</td>
-        <td>$29,280</td>
-        <td>Up to 226</td>
-        <td>Affordable compact EV</td>
-      </tr>
-      <tr>
-        <td>2025 Volvo EX30</td>
-        <td>$44,900</td>
-        <td>261</td>
-        <td>New entry-level SUV</td>
-      </tr>
-      <tr>
-        <td>2025 Volkswagen ID.4</td>
-        <td>$37,495</td>
-        <td>Up to 280</td>
-        <td>Compact SUV with European styling</td>
-      </tr>
-      <tr>
-        <td>2025 Hyundai Ioniq 5</td>
-        <td>$43,957</td>
-        <td>Up to 303</td>
-        <td>Retro-futuristic design</td>
-      </tr>
-      <tr>
-        <td>2025 Tesla Model 3</td>
-        <td>$42,490</td>
-        <td>Up to 358</td>
-        <td>High-performance sedan</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="table-container">
+    <div class="table-caption">Electric Vehicles</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Model</th>
+          <th>Starting Price (USD)</th>
+          <th>Range (miles)</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2025 Nissan Leaf</td>
+          <td>$29,280</td>
+          <td>Up to 226</td>
+          <td>Affordable compact EV</td>
+        </tr>
+        <tr>
+          <td>2025 Volvo EX30</td>
+          <td>$44,900</td>
+          <td>261</td>
+          <td>New entry-level SUV</td>
+        </tr>
+        <tr>
+          <td>2025 Volkswagen ID.4</td>
+          <td>$37,495</td>
+          <td>Up to 280</td>
+          <td>Compact SUV with European styling</td>
+        </tr>
+        <tr>
+          <td>2025 Hyundai Ioniq 5</td>
+          <td>$43,957</td>
+          <td>Up to 303</td>
+          <td>Retro-futuristic design</td>
+        </tr>
+        <tr>
+          <td>2025 Tesla Model 3</td>
+          <td>$42,490</td>
+          <td>Up to 358</td>
+          <td>High-performance sedan</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
   
-  <table>
-    <caption>Hybrid Vehicles</caption>
-    <thead>
-      <tr>
-        <th>Model</th>
-        <th>Starting Price (USD)</th>
-        <th>Fuel Efficiency (mpg)</th>
-        <th>Notes</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>2025 Toyota Prius</td>
-        <td>$24,360</td>
-        <td>Up to 58 city / 53 highway</td>
-        <td>Iconic hybrid hatchback</td>
-      </tr>
-      <tr>
-        <td>2025 Honda Insight</td>
-        <td>$25,210</td>
-        <td>55 city / 49 highway</td>
-        <td>Compact sedan with hybrid efficiency</td>
-      </tr>
-      <tr>
-        <td>2025 Ford Escape Hybrid</td>
-        <td>$28,255</td>
-        <td>44 city / 37 highway</td>
-        <td>Versatile SUV with hybrid option</td>
-      </tr>
-      <tr>
-        <td>2025 Lexus RX 500h</td>
-        <td>$48,550</td>
-        <td>Up to 27 city / 28 highway</td>
-        <td>Luxury SUV with hybrid powertrain</td>
-      </tr>
-      <tr>
-        <td>2025 Toyota RAV4 Prime</td>
-        <td>$39,220</td>
-        <td>38 mpg combined</td>
-        <td>Plug-in hybrid SUV</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="table-container">
+    <div class="table-caption">Hybrid Vehicles</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Model</th>
+          <th>Starting Price (USD)</th>
+          <th>Fuel Efficiency (mpg)</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2025 Toyota Prius</td>
+          <td>$24,360</td>
+          <td>Up to 58 city / 53 highway</td>
+          <td>Iconic hybrid hatchback</td>
+        </tr>
+        <tr>
+          <td>2025 Honda Insight</td>
+          <td>$25,210</td>
+          <td>55 city / 49 highway</td>
+          <td>Compact sedan with hybrid efficiency</td>
+        </tr>
+        <tr>
+          <td>2025 Ford Escape Hybrid</td>
+          <td>$28,255</td>
+          <td>44 city / 37 highway</td>
+          <td>Versatile SUV with hybrid option</td>
+        </tr>
+        <tr>
+          <td>2025 Lexus RX 500h</td>
+          <td>$48,550</td>
+          <td>Up to 27 city / 28 highway</td>
+          <td>Luxury SUV with hybrid powertrain</td>
+        </tr>
+        <tr>
+          <td>2025 Toyota RAV4 Prime</td>
+          <td>$39,220</td>
+          <td>38 mpg combined</td>
+          <td>Plug-in hybrid SUV</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
   
   <p class="note">*Prices and specifications are subject to change. Please verify with official manufacturer sources for the most current information.</p>
+  
+  <div class="mt-8 text-center text-sm text-apple-gray">
+    <p>Price data last updated: March 2025</p>
+  </div>
 </body>
 </html>
