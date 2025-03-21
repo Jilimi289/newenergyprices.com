@@ -3,151 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Energy Vehicles Prices | Real-time EV Price Tracking in North America</title>
-    <meta name="description" content="Stay updated with real-time prices of new energy vehicles in North America. Compare prices, features, and specifications of electric vehicles from top manufacturers.">
-    <link rel="canonical" href="https://newenergyprices.com" />
+    <title>New Energy Vehicles Prices - Comprehensive EV Price Guide</title>
+    <meta name="description" content="Find and compare the latest prices for new energy vehicles (NEVs) including electric cars, plug-in hybrids, and hydrogen fuel cell vehicles.">
+    <link rel="canonical" href="https://newenergyprices.com">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f5f5f7;
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apple: {
+                            blue: '#007AFF',
+                            green: '#34C759',
+                            indigo: '#5856D6',
+                            gray: '#8E8E93',
+                            lightgray: '#F2F2F7',
+                        }
+                    }
+                }
+            }
         }
-        .apple-gradient {
-            background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
-        }
-    </style>
+    </script>
 </head>
-<body class="min-h-screen">
-    <!-- Header Section -->
-    <header class="bg-white shadow-sm">
-        <nav class="container mx-auto px-4 py-4">
-            <div class="flex justify-between items-center">
-                <h1 class="text-2xl font-bold text-gray-900">New Energy Vehicles Prices</h1>
-                <div class="hidden md:flex space-x-6">
-                    <a href="#prices" class="text-gray-600 hover:text-blue-600">Prices</a>
-                    <a href="#features" class="text-gray-600 hover:text-blue-600">Features</a>
-                    <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
-                </div>
+<body class="bg-white text-gray-800 font-sans">
+    <!-- Header -->
+    <header class="bg-apple-blue text-white py-6 shadow-md">
+        <div class="container mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center">
+            <div>
+                <h1 class="text-2xl md:text-3xl font-bold">New Energy Vehicles Prices</h1>
+                <p class="text-sm md:text-base mt-2">Your comprehensive guide to electric and alternative fuel vehicle pricing</p>
             </div>
-        </nav>
+            <nav class="mt-4 md:mt-0">
+                <ul class="flex space-x-4 md:space-x-6">
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#prices" class="hover:underline">Prices</a></li>
+                    <li><a href="#about" class="hover:underline">About NEVs</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="container mx-auto px-4 py-12">
-        <div class="text-center">
-            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Real-time EV Price Tracking</h2>
-            <p class="text-xl text-gray-600 mb-8">Stay informed with up-to-date prices of electric vehicles across North America</p>
-            <div class="apple-gradient text-white px-8 py-3 rounded-full inline-block">
-                View Latest Prices
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 md:px-6 py-8">
+        <!-- Introduction Section -->
+        <section class="mb-12">
+            <div class="bg-apple-lightgray rounded-lg p-6 md:p-8 shadow-sm">
+                <h2 class="text-xl md:text-2xl font-semibold text-apple-blue mb-4">Tracking the Future of Transportation</h2>
+                <p class="mb-4">Welcome to New Energy Vehicles Prices, your definitive resource for up-to-date pricing information on electric vehicles, plug-in hybrids, and other alternative fuel vehicles from manufacturers worldwide.</p>
+                <p>Our comprehensive database is updated regularly to reflect the latest market trends, government incentives, and manufacturer pricing adjustments, helping you make informed decisions about your next vehicle purchase.</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Live Prices Section -->
-    <section id="prices" class="container mx-auto px-4 py-12">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8">Current Market Prices</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Tesla Model 3 -->
-            <div class="bg-white rounded-xl shadow-md p-6">
-                <h3 class="text-xl font-semibold mb-2">Tesla Model 3</h3>
-                <p class="text-3xl font-bold text-blue-600 mb-4">$41,990</p>
-                <ul class="space-y-2 text-gray-600">
-                    <li>Range: 358 miles</li>
-                    <li>0-60 mph: 3.1s</li>
-                    <li>Charging: 250kW</li>
-                </ul>
-            </div>
-            <!-- Ford Mustang Mach-E -->
-            <div class="bg-white rounded-xl shadow-md p-6">
-                <h3 class="text-xl font-semibold mb-2">Ford Mustang Mach-E</h3>
-                <p class="text-3xl font-bold text-blue-600 mb-4">$45,995</p>
-                <ul class="space-y-2 text-gray-600">
-                    <li>Range: 300 miles</li>
-                    <li>0-60 mph: 3.5s</li>
-                    <li>Charging: 150kW</li>
-                </ul>
-            </div>
-            <!-- Chevrolet Bolt EV -->
-            <div class="bg-white rounded-xl shadow-md p-6">
-                <h3 class="text-xl font-semibold mb-2">Chevrolet Bolt EV</h3>
-                <p class="text-3xl font-bold text-blue-600 mb-4">$26,500</p>
-                <ul class="space-y-2 text-gray-600">
-                    <li>Range: 259 miles</li>
-                    <li>0-60 mph: 6.5s</li>
-                    <li>Charging: 55kW</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="bg-white py-12">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8">Why Choose Electric Vehicles?</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="text-center">
-                    <div class="text-4xl mb-4">🌱</div>
-                    <h3 class="text-xl font-semibold mb-2">Environmental Impact</h3>
-                    <p class="text-gray-600">Zero emissions and reduced carbon footprint for a sustainable future</p>
+        <!-- Prices Section with iframe -->
+        <section id="prices" class="mb-12">
+            <h2 class="text-xl md:text-2xl font-semibold text-apple-blue mb-6 border-b border-apple-blue pb-2">Current New Energy Vehicle Prices</h2>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="responsive-iframe-container" style="position: relative; overflow: hidden; padding-top: 56.25%;">
+                    <iframe 
+                        src="price.html" 
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+                        title="New Energy Vehicles Price List"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
                 </div>
-                <div class="text-center">
-                    <div class="text-4xl mb-4">💰</div>
-                    <h3 class="text-xl font-semibold mb-2">Cost Savings</h3>
-                    <p class="text-gray-600">Lower operating costs and maintenance compared to traditional vehicles</p>
-                </div>
-                <div class="text-center">
-                    <div class="text-4xl mb-4">⚡</div>
-                    <h3 class="text-xl font-semibold mb-2">Performance</h3>
-                    <p class="text-gray-600">Instant torque and smooth acceleration for an enhanced driving experience</p>
+                <div class="p-4 bg-apple-lightgray">
+                    <p class="text-sm text-apple-gray">Price data last updated: March 2025</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="container mx-auto px-4 py-12">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8">About New Energy Vehicles</h2>
-        <div class="prose max-w-none">
-            <p class="text-gray-600 mb-4">
-                New energy vehicles (NEVs) represent the future of transportation, combining cutting-edge technology with environmental consciousness. These vehicles are powered by electric motors and advanced battery systems, offering a sustainable alternative to traditional internal combustion engines.
-            </p>
-            <p class="text-gray-600 mb-4">
-                The market for electric vehicles has seen exponential growth in recent years, with major manufacturers investing heavily in research and development. This has led to significant improvements in battery technology, range capabilities, and charging infrastructure.
-            </p>
-            <p class="text-gray-600">
-                Our platform provides real-time price tracking and comprehensive information about various electric vehicle models available in North America, helping consumers make informed decisions about their next vehicle purchase.
-            </p>
-        </div>
-    </section>
+        <!-- About NEVs Section -->
+        <section id="about" class="grid md:grid-cols-2 gap-8">
+            <div>
+                <h2 class="text-xl md:text-2xl font-semibold text-apple-blue mb-4 border-b border-apple-blue pb-2">Understanding New Energy Vehicles</h2>
+                <p class="mb-4">New Energy Vehicles (NEVs) represent the automotive industry's shift toward sustainable transportation solutions. These vehicles utilize alternative energy sources instead of or in addition to conventional internal combustion engines.</p>
+                <p class="mb-4">NEVs include several categories of vehicles:</p>
+                <ul class="list-disc pl-5 mb-4 space-y-2">
+                    <li><span class="font-medium">Battery Electric Vehicles (BEVs)</span>: Powered entirely by electricity stored in battery packs.</li>
+                    <li><span class="font-medium">Plug-in Hybrid Electric Vehicles (PHEVs)</span>: Combine a conventional engine with an electric motor and battery.</li>
+                    <li><span class="font-medium">Hydrogen Fuel Cell Vehicles</span>: Generate electricity through a chemical reaction between hydrogen and oxygen.</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-xl md:text-2xl font-semibold text-apple-blue mb-4 border-b border-apple-blue pb-2">Benefits of New Energy Vehicles</h2>
+                <div class="space-y-4">
+                    <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-apple-green">
+                        <h3 class="font-medium text-lg">Environmental Impact</h3>
+                        <p>NEVs produce significantly fewer emissions than traditional vehicles, helping to reduce air pollution and combat climate change.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-apple-blue">
+                        <h3 class="font-medium text-lg">Economic Advantages</h3>
+                        <p>Lower operating costs, tax incentives, and reduced maintenance requirements make NEVs increasingly cost-effective.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-apple-indigo">
+                        <h3 class="font-medium text-lg">Technological Innovation</h3>
+                        <p>NEVs often feature cutting-edge technology, from advanced driver assistance systems to innovative infotainment solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8">
-        <div class="container mx-auto px-4">
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 md:px-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                    <h3 class="text-xl font-semibold mb-4">New Energy Vehicles Prices</h3>
-                    <p class="text-gray-400">Your trusted source for electric vehicle pricing information</p>
+                    <h2 class="text-lg font-semibold mb-4">New Energy Vehicles Prices</h2>
+                    <p class="text-sm text-gray-300">Your trusted source for comprehensive information about new energy vehicle pricing worldwide.</p>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#prices" class="text-gray-400 hover:text-white">Prices</a></li>
-                        <li><a href="#features" class="text-gray-400 hover:text-white">Features</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-white">About</a></li>
+                    <h2 class="text-lg font-semibold mb-4">Quick Links</h2>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Home</a></li>
+                        <li><a href="#prices" class="text-gray-300 hover:text-white">Price Database</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-white">About NEVs</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold mb-4">Contact</h3>
-                    <p class="text-gray-400">Email: info@newenergyprices.com</p>
+                    <h2 class="text-lg font-semibold mb-4">Contact Us</h2>
+                    <p class="text-sm text-gray-300 mb-2">Have questions about NEV pricing or our data?</p>
+                    <a href="mailto:info@newenergyprices.com" class="text-apple-blue hover:underline">info@newenergyprices.com</a>
                 </div>
             </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 New Energy Vehicles Prices. All rights reserved.</p>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-400">
+                <p>&copy; 2025 New Energy Vehicles Prices. All rights reserved.</p>
             </div>
         </div>
     </footer>
 </body>
-</html>
+</html> 
