@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>北美新能源车价格汇总</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>North American New Energy Vehicle Prices</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 20px;
-      background-color: #f8f8f8;
+      background-color: #f4f4f4;
       color: #333;
     }
     h1 {
       text-align: center;
-      color: #00539C;
+      color: #00796b;
     }
     table {
-      width: 100%;
+      width: 80%;
+      margin: 20px auto;
       border-collapse: collapse;
       background-color: #fff;
-      margin-bottom: 30px;
     }
     th, td {
       padding: 12px 15px;
@@ -26,11 +27,11 @@
       text-align: center;
     }
     th {
-      background-color: #00539C;
+      background-color: #00796b;
       color: #fff;
     }
     tr:nth-child(even) {
-      background-color: #f2f2f2;
+      background-color: #f9f9f9;
     }
     caption {
       caption-side: top;
@@ -46,145 +47,96 @@
   </style>
 </head>
 <body>
-  <h1>北美新能源车价格汇总</h1>
+  <h1>North American New Energy Vehicle Prices</h1>
   
-  <!-- 混合动力车型 -->
   <table>
-    <caption>混合动力车型</caption>
+    <caption>Electric Vehicles</caption>
     <thead>
       <tr>
-        <th>序号</th>
-        <th>品牌/车型</th>
-        <th>起售价 (美元)</th>
-        <th>发动机/燃效</th>
-        <th>备注</th>
+        <th>Model</th>
+        <th>Starting Price (USD)</th>
+        <th>Range (miles)</th>
+        <th>Notes</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>1</td>
-        <td>丰田普锐斯C</td>
-        <td>$21,035</td>
-        <td>约99马力</td>
-        <td>掀背混合动力</td>
+        <td>2025 Nissan Leaf</td>
+        <td>$29,280</td>
+        <td>Up to 226</td>
+        <td>Affordable compact EV</td>
       </tr>
       <tr>
-        <td>2</td>
-        <td>现代 Ioniq 混合动力</td>
-        <td>$23,085</td>
-        <td>139马力，58 MPG</td>
-        <td></td>
+        <td>2025 Volvo EX30</td>
+        <td>$44,900</td>
+        <td>261</td>
+        <td>New entry-level SUV</td>
       </tr>
       <tr>
-        <td>3</td>
-        <td>起亚 Niro 混合动力</td>
-        <td>$23,785</td>
-        <td>139马力，50 MPG</td>
-        <td></td>
+        <td>2025 Volkswagen ID.4</td>
+        <td>$37,495</td>
+        <td>Up to 280</td>
+        <td>Compact SUV with European styling</td>
       </tr>
       <tr>
-        <td>4</td>
-        <td>丰田普锐斯</td>
-        <td>$24,360</td>
-        <td>121马力，52 MPG</td>
-        <td></td>
+        <td>2025 Hyundai Ioniq 5</td>
+        <td>$43,957</td>
+        <td>Up to 303</td>
+        <td>Retro-futuristic design</td>
       </tr>
       <tr>
-        <td>5</td>
-        <td>福特 C-MAX Hybrid</td>
-        <td>$25,050</td>
-        <td>188马力，40 MPG</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>福特 Fusion Hybrid</td>
-        <td>$25,538</td>
-        <td>188马力，42 MPG</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>现代 Sonata Hybrid</td>
-        <td>$26,885</td>
-        <td>193马力，42 MPG</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>起亚 Optima Hybrid</td>
-        <td>$26,890</td>
-        <td>192马力，42 MPG</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <!-- 纯电动车型 -->
-  <table>
-    <caption>纯电动车型</caption>
-    <thead>
-      <tr>
-        <th>序号</th>
-        <th>品牌/车型</th>
-        <th>起售价 (美元)</th>
-        <th>续航/性能</th>
-        <th>备注</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>三菱 i-MiEV</td>
-        <td>$23,845</td>
-        <td>66马力，续航62英里</td>
-        <td>小型纯电车</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Smart fortwo Electric Drive</td>
-        <td>$24,550</td>
-        <td>80马力，续航70-80英里</td>
-        <td>城市微型车</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Chevrolet Equinox EV (2025)</td>
-        <td>$34,995</td>
-        <td>续航319英里</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Ford Mustang Mach-E (2024)</td>
-        <td>$48,990</td>
-        <td>续航320英里</td>
-        <td>多种动力版本</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Hyundai Ioniq 6 (2025)</td>
-        <td>$43,850</td>
-        <td>续航342英里</td>
-        <td>电动轿车</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>Tesla Model Y (2024)</td>
-        <td>$44,990</td>
-        <td>续航320英里</td>
-        <td>紧凑型SUV</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>Tesla Model 3 (2024)</td>
+        <td>2025 Tesla Model 3</td>
         <td>$42,490</td>
-        <td>续航363英里</td>
-        <td>高效能轿车</td>
+        <td>Up to 358</td>
+        <td>High-performance sedan</td>
       </tr>
     </tbody>
   </table>
   
-  <p class="note">数据来源：网络汇总，价格仅供参考</p>
+  <table>
+    <caption>Hybrid Vehicles</caption>
+    <thead>
+      <tr>
+        <th>Model</th>
+        <th>Starting Price (USD)</th>
+        <th>Fuel Efficiency (mpg)</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2025 Toyota Prius</td>
+        <td>$24,360</td>
+        <td>Up to 58 city / 53 highway</td>
+        <td>Iconic hybrid hatchback</td>
+      </tr>
+      <tr>
+        <td>2025 Honda Insight</td>
+        <td>$25,210</td>
+        <td>55 city / 49 highway</td>
+        <td>Compact sedan with hybrid efficiency</td>
+      </tr>
+      <tr>
+        <td>2025 Ford Escape Hybrid</td>
+        <td>$28,255</td>
+        <td>44 city / 37 highway</td>
+        <td>Versatile SUV with hybrid option</td>
+      </tr>
+      <tr>
+        <td>2025 Lexus RX 500h</td>
+        <td>$48,550</td>
+        <td>Up to 27 city / 28 highway</td>
+        <td>Luxury SUV with hybrid powertrain</td>
+      </tr>
+      <tr>
+        <td>2025 Toyota RAV4 Prime</td>
+        <td>$39,220</td>
+        <td>38 mpg combined</td>
+        <td>Plug-in hybrid SUV</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p class="note">*Prices and specifications are subject to change. Please verify with official manufacturer sources for the most current information.</p>
 </body>
 </html>
